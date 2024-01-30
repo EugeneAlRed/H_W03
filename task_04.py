@@ -3,6 +3,14 @@ from datetime import datetime, timedelta
 
 
 def get_upcoming_birthdays(users):
+    """need to congratulate
+
+    Args:
+        users (list(dict)): username and birthday
+
+    Returns:
+        list(dict): need to congratulate
+    """
     date_now = datetime.today().date()
     birthday = []
     for user in users:
